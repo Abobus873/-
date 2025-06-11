@@ -1,9 +1,9 @@
 import telebot
 import random
 from telebot import types
+import os
 
-TOKEN = "8173714032:AAFnczmgJTWeJxmnyTcH4sgSzKDMxAUjLm0"  
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(os.getenv("TELEGRAM_BOT_TOKEN"))
 
 FACTS = [
     "Коты спят 70% жизни 😴",
